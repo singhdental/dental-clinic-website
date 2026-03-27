@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Singh Dental Clinic & Implant Centre</title>
+
+<style>
+body {margin:0;font-family:Arial,sans-serif;background:#f9f9f9;color:#333;}
+
+header {background:#0b3d5c;color:#fff;text-align:center;padding:20px;}
+nav {display:flex;justify-content:center;gap:20px;background:#145374;padding:10px;flex-wrap:wrap;}
+nav a {color:#fff;text-decoration:none;font-weight:bold;}
+
+.logo {height:80px;margin-bottom:10px;}
+
+/* Slider */
+.slider {overflow:hidden;}
+.slides {display:flex;width:400%;animation:slide 12s infinite;}
+
+.slide {position:relative;width:100%;}
+.slide img {
+  width:100%;
+  height:450px;
+  object-fit:cover;
+}
+
+@media(max-width:768px){
+  .slide img {height:250px;}
+}
+
+.caption {
+position:absolute;
+bottom:30px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(0,0,0,0.5);
+color:#fff;
+padding:10px 20px;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+text-align:center;
+}
+
+@keyframes slide {
+0% {margin-left:0%;}
+25% {margin-left:-100%;}
+50% {margin-left:-200%;}
+75% {margin-left:-300%;}
+100% {margin-left:0%;}
+}
+
+section {padding:40px 20px;max-width:1100px;margin:auto;}
+
+.services {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.card {background:#fff;padding:20px;border-radius:12px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+
+.gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
+.gallery img {width:100%;border-radius:12px;}
+
+.review-box {display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+@media(max-width:768px){.review-box{grid-template-columns:1fr;}}
+
+.review {background:#fff;padding:15px;border-radius:10px;text-align:center;}
+.review img {width:100%;height:auto;border-radius:10px;}
+.review p {margin-top:10px;font-weight:bold;}
+
+.map iframe {width:100%;height:300px;border:none;border-radius:10px;}
+
+footer {
+  background:#0b3d5c;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+footer a {
+  color:#fff;
+  text-decoration:none;
+  margin:0 6px;
+  font-weight:bold;
+}
+
+footer a:hover {text-decoration:underline;}
+
+form {display:flex;flex-direction:column;gap:10px;}
+input, textarea {padding:10px;border-radius:5px;border:1px solid #ccc;}
+button {background:#145374;color:#fff;border:none;padding:10px;border-radius:5px;}
+
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.jpg" class="logo">
+<h1>Singh Dental Clinic & Implant Centre</h1>
+<p>Your Smile is Important to Us</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- Slider -->
+<div class="slider" id="home">
+<div class="slides">
+
+<div class="slide">
+<img src="photo1.jpg">
+<div class="caption">Expert Dental Treatment in Nawada</div>
+</div>
+
+<div class="slide">
+<img src="photo2.jpg">
+<div class="caption">Restore Your Smile with Implants</div>
+</div>
+
+<div class="slide">
+<img src="photo3.jpg">
+<div class="caption">Pain-Free Treatment & Modern Technology</div>
+</div>
+
+<div class="slide">
+<img src="photo4.jpg">
+<div class="caption">Permanent Solution for Missing Teeth</div>
+</div>
+
+</div>
+</div>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">Teeth Cleaning</div>
+<div class="card">Tooth Extractions</div>
+<div class="card">Wisdom Tooth Removal</div>
+<div class="card">Children’s Dentistry</div>
+<div class="card">Root Canal Treatment</div>
+<div class="card">Teeth Whitening</div>
+<div class="card">Dental Implants</div>
+<div class="card">Dentures</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+</div>
+</section>
+
+<section id="reviews">
+<h2>Patient Reviews</h2>
+<div class="review-box">
+
+<div class="review">
+<img src="review1.jpg">
+<p>⭐️⭐️⭐️⭐️⭐️ Excellent treatment and care</p>
+</div>
+
+<div class="review">
+<img src="review2.jpg">
+<p>⭐️⭐️⭐️⭐️⭐️ Friendly doctor and painless procedure</p>
+</div>
+
+<div class="review">
+<img src="review3.jpg">
+<p>⭐️⭐️⭐️⭐️⭐️ Highly recommended clinic</p>
+</div>
+
+<div class="review">
+<img src="review4.jpg">
+<p>⭐️⭐️⭐️⭐️⭐️ Very clean clinic and good service</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>📞 6200734469, 06324358568</p>
+<p>📧 singhdentalclinic110@gmail.com</p>
+<p>📍 Nawada, Bihar</p>
+
+<div class="map">
+<iframe src="https://maps.google.com/maps?q=Nawada%20Bihar&output=embed"></iframe>
+</div>
+
+<form>
+<input type="text" placeholder="Your Name">
+<input type="tel" placeholder="Phone Number">
+<textarea placeholder="Your problem"></textarea>
+<button>Book Appointment</button>
+</form>
+</section>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/916200734469?text=Hello Doctor, I want to book an appointment at Singh Dental Clinic & Implant Centre. Please share available time slots.">
+💬
+</a>
+
+<!-- Footer -->
+<footer>
+
+<h3>Scan & Pay</h3>
+
+<div style="display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-bottom:15px;">
+<div>
+<img src="phonepe.jpg" style="width:140px;border-radius:10px;">
+<p><b>PhonePe</b></p>
+</div>
+
+<div>
+<img src="bharatpe.jpg" style="width:140px;border-radius:10px;">
+<p><b>BharatPe</b></p>
+</div>
+</div>
+
+<div style="margin:15px 0;">
+<a href="https://wa.me/916200734469?text=Hello Doctor, I want to book an appointment" target="_blank">📱 WhatsApp</a> |
+<a href="https://www.instagram.com/singhdental10?igsh=MTFyYTFpc2ZvMTlmbw==" target="_blank">📸 Instagram</a> |
+<a href="https://www.facebook.com/share/1AUCRQ5cHj/" target="_blank">📘 Facebook</a> |
+<a href="https://youtube.com/@singhdental.drvipulkumar?si=y9ZUUh7Bs6k0Cpx4" target="_blank">▶️ YouTube</a> |
+<a href="https://www.google.com/maps/place/Nawada+Bihar" target="_blank">📍 Google Map</a>
+</div>
+
+<p>© 2026 Singh Dental Clinic & Implant Centre</p>
+
+</footer>
+
+</body>
+</html>
