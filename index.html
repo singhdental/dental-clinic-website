@@ -194,7 +194,25 @@ text-decoration:none;
 
 </div>
 </section>
+<section id="doctor" style="padding:40px 20px;background:#eef6f9;">
+<h2 style="text-align:center;">Doctor Profile</h2>
 
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px;margin-top:20px;">
+
+  <img src="doctor.jpg" style="width:220px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+
+  <div style="max-width:500px;">
+    <h3>Dr. Singh</h3>
+    <p><b>Qualification:</b> BDS / MDS</p>
+    <p><b>Experience:</b> 5+ Years</p>
+    <p>
+      We provide advanced dental care with modern technology and painless treatment. 
+      Specialized in dental implants, root canal, and smile restoration.
+    </p>
+  </div>
+
+</div>
+</section>
 <section id="contact">
 <h2>Contact</h2>
 <p>📞 6200734469, 06324358568</p>
@@ -205,11 +223,11 @@ text-decoration:none;
 <iframe src="https://maps.google.com/maps?q=Nawada%20Bihar&output=embed"></iframe>
 </div>
 
-<form>
-<input type="text" placeholder="Your Name">
-<input type="tel" placeholder="Phone Number">
-<textarea placeholder="Your problem"></textarea>
-<button>Book Appointment</button>
+<form onsubmit="sendToWhatsApp(); return false;">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="tel" id="phone" placeholder="Phone Number" required>
+  <textarea id="problem" placeholder="Your Problem"></textarea>
+  <button type="submit">Book Appointment</button>
 </form>
 </section>
 
@@ -246,6 +264,16 @@ text-decoration:none;
 <p>© 2026 Singh Dental Clinic & Implant Centre</p>
 
 </footer>
+<script>
+function sendToWhatsApp() {
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let problem = document.getElementById("problem").value;
 
+  let message = `Hello Doctor, I want to book an appointment.%0AName: ${name}%0APhone: ${phone}%0AProblem: ${problem}`;
+
+  window.open(`https://wa.me/916200734469?text=${message}`, "_blank");
+}
+</script>
 </body>
 </html>
